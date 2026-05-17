@@ -37,7 +37,7 @@ jobs:
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
               echo "Processing: $line" >&2
-              final_url=$(curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -s -o /dev/null -w %{url_effective} --max-time 30 "$line") || { echo "Failed to fetch: $line" >&2; final_url="$line"; }
+              final_url=$(curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -s -o /dev/null -w %{url_effective} --max-time 10 "$line") || { echo "Failed to fetch: $line" >&2; final_url="$line"; }
               echo "$final_url"
             else
               echo "$line"
