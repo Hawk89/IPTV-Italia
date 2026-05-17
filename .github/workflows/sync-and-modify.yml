@@ -32,7 +32,8 @@ jobs:
            
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
-              final_url=$(curl -L -s -o /dev/null -w %{url_effective} "$line")
+              #final_url=$(curl -L -s -o /dev/null -w %{url_effective} "$line")
+              final_url=$(curl -L -s -A "Mozilla/5.0" -o /dev/null -w %{url_effective} "$line")Copied!   
               echo "url:$final_url"
             else
               echo "$line"
