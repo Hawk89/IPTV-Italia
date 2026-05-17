@@ -40,13 +40,13 @@ jobs:
           done < prova.m3u > ipradioita_new.m3u
       
           #sed -i '/^http/d; s/^url:http/http/g' temp.m3u
-          mv temp.m3u prova2.m3u
+          #mv temp.m3u prova2.m3u
         shell: bash
 
-      - name: Modify prova2.m3u
+      - name: Modify ipradioita_new.m3u
         run: |
-          if [ -f "prova2.m3u" ]; then
-            sed -i -E 's/(#EXTINF:[^,]*,)/\1 group-title="Radio" radio="true",/' prova2.m3u
+          if [ -f "ipradioita_new.m3u" ]; then
+            sed -i -E 's/(#EXTINF:[^,]*,)/\1 group-title="Radio" radio="true",/' ipradioita_new.m3u
           fi
 
       - name: Commit Changes
