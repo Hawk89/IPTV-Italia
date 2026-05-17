@@ -27,6 +27,9 @@ jobs:
 
       - name: Update M3U URLs
         run: |
+          # Convert DOS line endings to Unix  
+          dos2unix ipradioita.m3u || true
+           
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
               final_url=$(curl -L -s -o /dev/null -w %{url_effective} "$line")
