@@ -29,10 +29,15 @@ jobs:
             ipradioita.m3u
             iptvitaplus.m3u
             iptvita.m3u
+      - name: Copy upstream files to root
+        run: |
+          cp upstream-repo/ipradioita.m3u .
+          cp upstream-repo/iptvitaplus.m3u .
+          cp upstream-repo/iptvita.m3u .
 
       - name: Update M3U URLs
         run: |
-          sed -i 's/\r$//' prova.m3u
+          sed -i 's/\r$//' ipradioita.m3u
           
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
@@ -42,22 +47,22 @@ jobs:
             else
               echo "$line"
             fi
-          done < prova.m3u > prova_new.m3u
+          done < ipradioita.m3u > ipradioita_new.m3u
           
           # Confirm file creation
-          if [ -f prova_new.m3u ]; then
+          if [ -f ipradioita_new.m3u ]; then
             echo "File created successfully"
-            ls -la prova_new.m3u
+            ls -la ipradioita_new.m3u
           else
             echo "File creation failed"
             exit 1
           fi
         shell: bash
 
-      - name: Modify prova_new.m3u
+      - name: Modify ipradioita_new.m3u
         run: |
-          if [ -f "prova_new.m3u" ]; then
-            sed -i -E 's/(#EXTINF:[^,]*,)/\1 group-title="Radio" radio="true",/' prova_new.m3u
+          if [ -f "ipradioita_new.m3u" ]; then
+            sed -i -E 's/(#EXTINF:[^,]*,)/\1 group-title="Radio" radio="true",/' ipradioita_new.m3u
           fi
 
       - name: Commit Changes
@@ -66,9 +71,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           # Stage the modified file
-          git add prova_new.m3u
+          git add ipradioita_new.m3u
           # Commit the change (if there was a modification)
-          git commit -m "Modify prova_new.m3u" || echo "No changes to commit"
+          git commit -m "Modify ipradioita_new.m3u" || echo "No changes to commit"
           
           # See what Git considers "unstaged"
           git status
