@@ -29,6 +29,8 @@ jobs:
             ipradioita.m3u
             iptvitaplus.m3u
             iptvita.m3u
+            # Stage the updated files
+            git add ipradioita.m3u iptvitaplus.m3u iptvita.m3u
             
       - name: Copy upstream files to root
         run: |
