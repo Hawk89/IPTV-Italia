@@ -27,8 +27,8 @@ jobs:
 
       - name: Update M3U URLs
         run: |
-          # Convert DOS line endings to Unix  
-          dos2unix ipradioita.m3u || true
+          # Remove carriage returns (CRLF -> LF)
+          sed -i 's/\r$//' ipradioita.m3u
            
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
