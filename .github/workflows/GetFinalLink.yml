@@ -33,7 +33,7 @@ jobs:
             });
             const page = await browser.newPage();
 
-            let lines = fs.readFileSync('ipradioita.m3u', 'utf8').split('\\n');
+            let lines = fs.readFileSync('prova.m3u', 'utf8').split('\\n');
             let output = [];
 
             for (let line of lines) {
