@@ -38,10 +38,20 @@ jobs:
           rm -rf upstream-repo
           # Stage the updated files
           git add ipradioita.m3u iptvitaplus.m3u iptvita.m3u
+      - name: Commit Changes
+        run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Update M3U files from upstream"
-          git push
+          
+          # Only commit if there are changes
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "Update M3U files from upstream"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update M3U URLs
         run: |
