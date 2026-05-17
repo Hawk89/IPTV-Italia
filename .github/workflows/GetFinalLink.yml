@@ -2,7 +2,7 @@ name: Update M3U Radio Links
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Run daily
+    - cron: '0 0 1 * *' # Run daily
   workflow_dispatch:
 
 jobs:
