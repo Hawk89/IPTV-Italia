@@ -61,7 +61,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           
           # Stage the modified file
-          git add prova2.m3u
+          git add ipradioita_new.m3u
           # Commit the change (if there was a modification)
           git commit -m "Modify prova2.m3u" || echo "No changes to commit"
           
