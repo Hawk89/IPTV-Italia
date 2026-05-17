@@ -1,9 +1,0 @@
-#EXTM3U
-#EXTINF:-1, group-title="Radio" radio="true", radio="true",Rai Radio 1
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=162834&output=16
-#EXTINF:-1, group-title="Radio" radio="true", radio="true",Rai Radio 2
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=162063&output=16
-#EXTINF:-1, group-title="Radio" radio="true", radio="true",Rai Radio 3
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=162841&output=16
-#EXTINF:-1, group-title="Radio" radio="true", radio="true",Rai Isoradio
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=173875&output=16
