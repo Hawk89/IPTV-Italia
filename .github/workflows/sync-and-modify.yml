@@ -32,7 +32,7 @@ jobs:
 
       - name: Update M3U URLs
         run: |
-          sed -i 's/\r$//' prova.m3u
+          sed -i 's/\r$//' ipradioita.m3u
           
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
@@ -42,7 +42,7 @@ jobs:
             else
               echo "$line"
             fi
-          done < prova.m3u > ipradioita_new.m3u
+          done < ipradioita.m3u > ipradioita_new.m3u
           
           # Confirm file creation
           if [ -f ipradioita_new.m3u ]; then
@@ -68,7 +68,7 @@ jobs:
           # Stage the modified file
           git add ipradioita_new.m3u
           # Commit the change (if there was a modification)
-          git commit -m "Modify prova2.m3u" || echo "No changes to commit"
+          git commit -m "Modify ipradioita_new.m3u" || echo "No changes to commit"
           
           # Now fetch and rebase
           git fetch origin main
