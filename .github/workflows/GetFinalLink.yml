@@ -23,44 +23,8 @@ jobs:
         run: |
           npm install puppeteer
 
-      - name: Update M3U URLs
-        run: |
-          node <<EOF
-          const puppeteer = require('puppeteer');
-          const fs = require('fs');
-
-          (async () => {
-            const browser = await puppeteer.launch({
-              args: ['--no-sandbox', '--disable-setuid-sandbox']
-            });
-            const page = await browser.newPage();
-            await page.setExtraHTTPHeaders({
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-              'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-              'Accept-Language': 'en-US,en;q=0.9'
-            });
-            let lines = fs.readFileSync('prova.m3u', 'utf8').split('\\n');
-            let output = [];
-
-            for (let line of lines) {
-              if (line.trim().startsWith('http')) {
-                try {
-                  await page.goto(line.trim(), { waitUntil: 'networkidle0', timeout: 10000 });
-                  let finalUrl = page.url();
-                  output.push(finalUrl);
-                } catch (err) {
-                  console.error('Failed to load:', line, err.message);
-                  output.push(line); // Keep original on failure
-                }
-              } else {
-                output.push(line);
-              }
-            }
-
-            await browser.close();
-            fs.writeFileSync('ipradioita_new.m3u', output.join('\\n'));
-          })();
-          EOF
+      - name: Run update script
+        run: node update_m3u.js
 
       - name: Commit and push
         uses: EndBug/add-and-commit@v10
