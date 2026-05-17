@@ -87,11 +87,13 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          # Scarica il file M3U esterno (es. dalla tua URL)
+          curl -L -o "tvita.m3u" "https://davidefulgione.it/tv.m3u"
           
           # Stage the modified file
-          git add rit.m3u
+          git add rit.m3u tvita.m3u
           # Commit the change (if there was a modification)
-          git commit -m "Modify rit.m3u" || echo "No changes to commit"
+          git commit -m "Modify rit.m3u and add external m3u" || echo "No changes to commit"
           
           # See what Git considers "unstaged"
           git status
