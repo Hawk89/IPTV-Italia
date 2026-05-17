@@ -25,6 +25,20 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Update M3U URLs
+        run: |
+          while IFS= read -r line; do
+            if [[ $line =~ ^http ]]; then
+              final_url=$(curl -L -s -o /dev/null -w %{url_effective} "$line")
+              echo "url:$final_url"
+            else
+              echo "$line"
+            fi
+          done < playlist.m3u > temp.m3u
+      
+          sed -i '/^http/d; s/^url:http/http/g' temp.m3u
+          #mv temp.m3u playlist.m3u
+
       - name: Modify ipradioita.m3u
         run: |
           if [ -f "ipradioita.m3u" ]; then
