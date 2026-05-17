@@ -55,8 +55,7 @@ jobs:
 
       - name: Update M3U URLs
         run: |
-          sed -i 's/\r$//' ipradioita.m3u
-          
+        
           while IFS= read -r line; do
             if [[ $line =~ ^http ]]; then
               echo "Processing: $line" >&2
@@ -65,7 +64,7 @@ jobs:
             else
               echo "$line"
             fi
-          done < ipradioita.m3u > ipradioita_new.m3u
+          done < <(sed 's/\r$//' ipradioita.m3u) > ipradioita_new.m3u
           
           # Confirm file creation
           if [ -f ipradioita_new.m3u ]; then
