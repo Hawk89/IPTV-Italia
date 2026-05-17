@@ -38,13 +38,13 @@ jobs:
           
           # Stage the modified file
           git add ipradioita.m3u
+          # Commit the change (if there was a modification)
+          git commit -m "Modify ipradioita.m3u" || echo "No changes to commit"
           
           # Now fetch and rebase
           git fetch origin main
           git rebase origin/main
           
-          # Commit the change (if there was a modification)
-          git commit -m "Modify ipradioita.m3u" || echo "No changes to commit"
           git push --force-with-lease
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
