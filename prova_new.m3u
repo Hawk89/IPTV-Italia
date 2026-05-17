@@ -1,0 +1,83 @@
+#EXTM3U
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Rai Radio 1
+https://radiounoest-live.akamaized.net/hls/live/2032586/radiounoest/radiounoest/playlist.m3u8?auth=daEaOdnd6cCbSdRdnb_d.ama9a7cedebzc.-bQcDJ9-c0-AmuxzGv&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Rai Radio 2
+https://radiodue-live.akamaized.net/hls/live/2032592/radiodue/radiodue/playlist.m3u8?auth=daEcNayducGbqbXaJabdCcHcyd0atb9aBa8-bQcDJ9-c0-JjvxrGp&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Rai Radio 3
+https://streamcdng12-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/radiotreest1/hls/playlist_mo.m3u8?auth=daEboalaFcrdAdAcWabcyc0dEcRbIbKasaw-bQcDJ9-c0-EjsusGu&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Rai Isoradio
+https://isoradioest-live.akamaized.net/hls/live/2032602/isoradioest/isoradioest/playlist.m3u8?auth=daEdGafaFa7cPbcaycOaxd4aFdtakbNdha1-bQcDJ.-c0-CjwusEw&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai Radio 1 Sport
+https://radiounosportest-live.akamaized.net/hls/live/2032591/radiounosportest/radiounosportest/playlist.m3u8?auth=daEdqasbTdjbXdJbUb0bcdSaUcdcNd.cRd8-bQcDJ_-c0-GjzvwHw&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai Radio 3 Classica
+https://radiotreclassica-live.akamaized.net/hls/live/2032595/radiotreclassica/radiotreclassica/playlist.m3u8?auth=daEdka7cNaVd0c2dOaNbQcIdYbub.bIdTbP-bQcDKa-c0-AjAwAEu&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] No Name Radio
+https://radiodueindie-live.akamaized.net/hls/live/2032593/radiodueindie/radiodueindie/playlist.m3u8?auth=daEdkbmdXdycAdcdFbYcHc5cVbkcNdvbMdY-bQcDKa-c0-AktxAHr&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai Radio Kids
+https://radiokids-live.akamaized.net/hls/live/2032600/radiokids/radiokids/playlist.m3u8?auth=daEcudAbMcbaAatasccdSd5drcFcoaUbXdk-bQcDKb-c0-AmxvzGo&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai Radio Live Napoli
+https://radiolive-live.akamaized.net/hls/live/2032599/radiolive/radiolive/playlist.m3u8?auth=daEbabZc4dkcoaUbEbcdjbCdgbbbPbdc0bz-bQcDKc-c0-AkswxHn&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai Radio Techetè
+https://radiotechete-live.akamaized.net/hls/live/2032598/radiotechete/radiotechete/playlist.m3u8?auth=daEb3bncFdEazdMaZacc0d4d3d_cldNb9c0-bQcDKc-c0-FkuwsHn&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai Radio Tutta Italiana
+https://radiotuttaitaliana-live.akamaized.net/hls/live/2032596/radiotuttaitaliana/radiotuttaitaliana/playlist.m3u8?auth=daEaRbQdpa7dUd5bzdkaobZbZc7c2bXaHdI-bQcDKd-c0-DktxwEw&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] Rai GRParlamento
+https://radioparlamento-live.akamaized.net/hls/live/2032597/radioparlamento/radioparlamento/playlist.m3u8?auth=daEdwbldQcpdfbQcocadTbyd0b0dbcXanaF-bQcDKe-c0-CksxtGs&aifp=V001
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Radio Sportiva
+https://sportiva.inmystream.it/stream/sportiva
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",RTL 102.5
+https://StreamCdnP12-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S97044836/tbbP8T1ZRPBL/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Radio Freccia
+https://StreamCdnG1-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S3160845/0tuSetc8UFkF/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Radio Zeta
+https://StreamCdnG1-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] RTL 102.5 Best
+https://StreamCdnP7-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S76960628/OEPHRUIctA0M/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] RTL 102.5 Bro&Sis
+https://StreamCdnG18-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S75007890/MUGHuxc9dQ3b/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] RTL 102.5 Romeo&Juliet
+https://StreamCdnG4-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S8448465/zTYa1Z5Op9ue/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] RTL 102.5 Napulè
+https://StreamCdnB4-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S27134503/0f9AhuwKlhnZ/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] RTL 102.5 Doc
+https://StreamCdnB4-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S51100361/0Fb4R3k82b5Z/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[DAB] RTL 102.5 News
+https://StreamCdnG17-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_audio.m3u8
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",Virgin Radio
+https://icy.unitedradio.it/Virgin.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Classic Rock
+https://icy.unitedradio.it/VirginRockClassics.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock Hits
+https://icy.unitedradio.it/VirginRockHits.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock Ballads
+https://icy.unitedradio.it/Virgin_06.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock '70
+https://icy.unitedradio.it/VirginRock70.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock '80
+https://icy.unitedradio.it/VirginRock80.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock '90
+https://icy.unitedradio.it/Virgin_03.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock 2K
+https://icy.unitedradio.it/Virgin_02.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Hard Rock
+https://icy.unitedradio.it/VirginHardRock.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Rock Party
+https://icy.unitedradio.it/VirginRockParty.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Virgin Radio Alternative Rock
+https://icy.unitedradio.it/VirginRockAlternative.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: AC/DC
+https://icy.unitedradio.it/um1026.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Guns N'Roses
+https://icy.unitedradio.it/um1029.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Rolling Stones
+https://icy.unitedradio.it/VirginSpecialEvent.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Pink Floyd
+https://icy.unitedradio.it/VirginRogerWaters.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Queen
+https://icecast.unitedradio.it/Virgin_05.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Aerosmith
+https://icy.unitedradio.it/um1028.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Bon Jovi
+https://icy.unitedradio.it/um1027.mp3
+#EXTINF:-1, group-title="Radio" radio="true", group-title="Radio" radio="true", radio="true",[Web] Rockstar: Oasis
+https://icy.unitedradio.it/um1030.mp3
