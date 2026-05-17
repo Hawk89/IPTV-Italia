@@ -8,6 +8,8 @@ on:
 jobs:
   update-links:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -57,7 +59,7 @@ jobs:
           EOF
 
       - name: Commit and push
-        uses: actions/git-add-and-commit@v4
+        uses: EndBug/add-and-commit@v10
         with:
           add: 'ipradioita.m3u'
           message: 'Update M3U radio links'
