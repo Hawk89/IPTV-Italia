@@ -38,6 +38,9 @@ jobs:
           rm -rf upstream-repo
           # Stage the updated files
           git add ipradioita.m3u iptvitaplus.m3u iptvita.m3u
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Update M3U files from upstream"
           git push
 
       - name: Update M3U URLs
